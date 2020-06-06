@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ui1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/edittext_background"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/label_password"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/label_background"
+        android:gravity="center"
+        android:text="Password:"
+        android:textSize="60px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:gravity="center"
+        android:shadowColor="#ff000000"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="Register your account"
+        android:textColor="#ffffff"
+        android:textSize="100px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/edittext_background"
+        android:hint=" Letter and numbers only"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/edittext_background"
+        android:hint=" with 8~12 length"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_username"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/label_background"
+        android:gravity="center"
+        android:text="Username:"
+        android:textSize="60px"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register_submit_button"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="458dp"
+        android:background="@drawable/button_selector"
+        android:text="Register"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register_back_button"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/ui3" />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ui1" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="#ff000000"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="3.0"
+            android:text="Welcome to My System!"
+            android:textColor="#ffffff"
+            android:textSize="80px"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140px"
+            android:layout_marginTop="1000px"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="Register"
+            android:textSize="70px" />
+        <Button
+            android:id="@+id/log_in_button"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140px"
+            android:layout_marginTop="1200px"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="Log in"
+            android:textSize="70px" />
+    </RelativeLayout>
+</LinearLayout>

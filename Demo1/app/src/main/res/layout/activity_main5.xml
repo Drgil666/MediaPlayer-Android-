@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <com.example.demo1.ResizableImageView
+        android:id="@+id/post_background_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.75"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="166dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="255"
+        android:background="@drawable/ui5"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_pre"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ui9"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="257dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ui10"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/vinyl"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
+        android:src="@mipmap/post0" />
+
+    <com.example.demo1.CircleImageView
+        android:id="@+id/post_view"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        android:src="@mipmap/post1" />
+
+    <TextView
+        android:id="@+id/played_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="137dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="00:00"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="137dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="00:00"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="null"
+        android:textColor="#ffffff"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/music_anthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="null"
+        android:textColor="#ffffff"
+        android:textSize="35px"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/play_mode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ui14"
+        android:text="" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="236dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="125dp"
+        android:max="100"
+        android:maxHeight="65dp"
+        android:minHeight="65dp"
+        android:progress="0"
+        android:splitTrack="false" />
+
+
+    <Button
+        android:id="@+id/account_button"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="15dp"
+        android:text=""
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/change_button"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/ui6"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="406dp"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"/>
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:queryHint="请输入歌曲名进行搜索"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible" />
+</RelativeLayout>
